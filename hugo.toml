@@ -1,0 +1,30 @@
+baseURL = 'https://314track.github.io/kb/'
+languageCode = 'en-US'
+title = 'kb'
+theme = 'hugo-book'
+
+# (Optional) Set this to true to enable 'Last Modified by' date and git author
+#  information on 'doc' type pages.
+enableGitInfo = true
+
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
+
+[params]
+
+  # (Optional, default none) Set template for commit link for the page. Requires enableGitInfo.
+  # When set enabled 'Last Modified' and a link to the commit in the footer of the page.
+  # Param is executed as template using .Site, .Page and .GitInfo as context.
+  BookLastChangeLink = 'https://github.com/314track/kb/commit/{{ .GitInfo.Hash }}'
+
+  # (Optional, default none) Set template for edit page link.
+  # When set enabled 'Edit this page' link in the footer of the page.
+  # Param is executed as template using .Site, .Page and .Path as context.
+  BookEditLink = 'https://github.com/314track/kb/edit/main/{{ .Path }}'
+
+  # (Optional, default 'January 2, 2006') Configure the date format used on the pages
+  # - In git information
+  # - In blog posts
+  # https://gohugo.io/functions/time/format/
+  BookDateFormat = 'January 2, 2006'
