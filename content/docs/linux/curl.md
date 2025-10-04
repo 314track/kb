@@ -2,6 +2,7 @@
 title: "curl"
 draft: false
 ---
+
 # curl
 
 Some useful curl commands
@@ -18,13 +19,12 @@ curl --resolve example.com:80:127.0.0.1 http://example.com/
 
 ### URL to API
 
-* https://api.github.com/repos/prometheus/alertmanager/releases/latest
-* https://api.github.com/repos/prometheus/blackbox_exporter/releases/latest
-* https://api.github.com/repos/grafana/grafana/releases/latest
-* https://api.github.com/repos/prometheus/prometheus/releases/latest
-* https://api.github.com/repos/influxdata/telegraf/releases/latest
-* https://api.github.com/repos/thanos-io/thanos/releases/latest
-
+* `https://api.github.com/repos/prometheus/alertmanager/releases/latest`
+* `https://api.github.com/repos/prometheus/blackbox_exporter/releases/latest`
+* `https://api.github.com/repos/grafana/grafana/releases/latest`
+* `https://api.github.com/repos/prometheus/prometheus/releases/latest`
+* `https://api.github.com/repos/influxdata/telegraf/releases/latest`
+* `https://api.github.com/repos/thanos-io/thanos/releases/latest`
 
 ```bash
 curl --silent "<apiurl>" | grep '"tag_name":' | sed -nre 's/^[^0-9]*(([0-9]+\.)*[0-9]+).*/\1/p'

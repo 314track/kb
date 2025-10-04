@@ -1,6 +1,7 @@
 ---
 title: "ansible-galaxy"
 ---
+
 # ansible-galaxy
 
 ## Install collections and roles from requirements file
