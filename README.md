@@ -3,7 +3,7 @@
 knowledge base repository using [hugo](https://gohugo.io/) and [hugo book theme](https://hugo-book-demo.netlify.app/)
 
 
-## Installing latest version of hugo
+## Installing latest version of Hugo
 
 ```bash
 
@@ -20,4 +20,34 @@ rm  "hugo_extended_${HUGO_VERSION}_linux-amd64.tar.gz"
 unset HUGO_VERSION
 ```
 
+## Install Hugo book theme
 
+```bash
+git submodule add https://github.com/alex-shpak/hugo-book themes/hugo-book
+```
+
+modify hugo.toml
+
+```toml
+theme = "hugo-book"
+```
+
+Update Hugo book theme
+
+```bash
+git submodule update --remote
+```
+
+## Hugo
+
+Start Hugo’s development server to view the site.
+
+```bash
+hugo server
+```
+
+Publish Hugo`s website
+
+```
+hugo
+```
