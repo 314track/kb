@@ -19,6 +19,12 @@ git config user.name 314track
 git config user.email 235858822+314track@users.noreply.github.com
 ```
 
+## Configure global default init branch
+
+```bash
+git config --global init.defaultBranch main
+```
+
 ## Working with tags
 
 ```bash
