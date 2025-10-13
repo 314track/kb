@@ -7,6 +7,18 @@ draft: false
 
 ## git config
 
+### List git global configuration
+
+```bash
+git config --global --list
+```
+
+### List git configuration
+
+```bash
+git config --list
+```
+
 ### Configure user name
 
 ```bash
