@@ -5,6 +5,12 @@ draft: false
 
 # Crowdsecurity CLI
 
+## List installed configurations
+
+```bash
+sudo cscli hub list
+```
+
 ## List which collections are active
 
 ```bash
