@@ -7,46 +7,82 @@ draft: false
 
 ## git config
 
-### List git global configuration
+List git global configuration
 
 ```bash
 git config --global --list
 ```
 
-### List git configuration
+List git configuration
 
 ```bash
 git config --list
 ```
 
-### Configure user name
+Configure user name
 
 ```bash
 git config user.name 314track
 ```
 
-### Configure users email address
+Configure users email address
 
 ```bash
 git config user.email 235858822+314track@users.noreply.github.com
 ```
 
-## Configure global default init branch
+Configure global default init branch
 
 ```bash
 git config --global init.defaultBranch main
 ```
 
-## Working with tags
+## git tag
+
+Create a tag
 
 ```bash
 git tag -a v1.4 -m 'version 1.4'
 ```
 
-## Squash commits
+List all local tags
 
 ```bash
-git reset --soft $(git merge-base main HEAD)
+git tag
+```
+
+List local tags with annotation message
+
+```bash
+git tag -n
+```
+
+List local tags matching a pattern
+
+```bash
+git tag -l "<pattern>"
+```
+
+List all remote tags
+
+```bash
+git ls-remote --tags <remote-name>
+```
+
+Fetch tags from remote and list locally
+
+```bash
+git fetch --tags
+```
+
+```bash
+git tag -l
+```
+
+Delete an existing tag
+
+```bash
+git tag -d v1.4
 ```
 
 ## git switch
@@ -63,11 +99,18 @@ Create a new branch
 git switch -c <fix|feature/branch name>
 ```
 
-
 ## git checkout
 
-Obtaining a specific Version of a file using a hash or a branch:
+Obtain a specific version of a file using a hash or a branch:
 
 ```bash
 git checkout <branch name | commit hash> -- <file path>
+```
+
+# git workflows
+
+## Squash commits
+
+```bash
+git reset --soft $(git merge-base main HEAD)
 ```
