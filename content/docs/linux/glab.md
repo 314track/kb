@@ -52,3 +52,9 @@ glab mr approve
 ```bash
 glab mr merge
 ```
+
+## Clone entire groups
+
+```bash
+glab repo clone -g <group> -a=false -p --paginate
+```
