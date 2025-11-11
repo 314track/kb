@@ -1,3 +1,8 @@
+---
+title: "pipx"
+draft: false
+---
+
 # pipx
 
 Install and Run Python Applications in Isolated Environments
