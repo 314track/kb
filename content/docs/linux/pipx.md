@@ -26,3 +26,10 @@ For example, if molecule-plugins is installed and the Python module docker is re
 ```bash
 pipx inject molecule-plugins docker
 ```
+
+## Upgrade all packages
+
+```bash
+pipx upgrade-all
+```
+
