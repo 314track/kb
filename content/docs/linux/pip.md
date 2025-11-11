@@ -1,3 +1,7 @@
+---
+title: "pip"
+---
+
 # pip
 
 Write all installed packages in current venv into `requirements.txt`
