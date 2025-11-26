@@ -25,3 +25,11 @@ openssl x509 -text
 ```bash
 openssl x509 -inform der -in CERTIFICATE.der -out CERTIFICATE.pem
 ```
+
+## Preparing certificate for haproxy
+
+Starting with the server certificate, becoming more and more general (intermediate certificates, without the root ca), ending with the private key.
+
+```bash
+cat <certificate>.decer.cer ECC_D-TRUST_BR_CA_1-20-1_2020.cer ECC_D-TRUST_BR_Root_CA_1_2020.cer <private key>.key > output.pem
+```
