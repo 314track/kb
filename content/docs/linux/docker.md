@@ -45,6 +45,11 @@ docker run [options] <image> [command] [arguments]
 docker exec [options] <container id or container name> <command>
 ```
 
+Determine user to uid in container (e.g.)
+```bash
+docker exec -it <container name> bash -c "id $((100996-100000))"
+```
+
 ## docker build
 
 ```bash
