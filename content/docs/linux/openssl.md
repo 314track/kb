@@ -23,7 +23,13 @@ openssl x509 -text
 ## Convert DER to PEM
 
 ```bash
-openssl x509 -inform der -in CERTIFICATE.der -out CERTIFICATE.pem
+openssl x509 -inform der -in certificate.der -out certificate.pem
+```
+
+## Convert CER (binary) to PEM
+
+```bash
+openssl x509 -in certificate.crt -out certificate.pem -outform PEM
 ```
 
 ## Preparing certificate for haproxy
