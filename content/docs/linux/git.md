@@ -79,10 +79,22 @@ git fetch --tags
 git tag -l
 ```
 
-Delete an existing tag
+Delete an existing local tag
 
 ```bash
 git tag -d v1.4
+```
+
+Delete an existing remote tag
+
+```bash
+git push origin :v1.4
+```
+
+Push all local tags to origin
+
+```bash
+git push origin --tags
 ```
 
 ## git switch
