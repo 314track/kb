@@ -20,5 +20,5 @@ nc -vz <remote host>  20-30
 ## Check SMTP Banner
 
 ```bash
-echo QUIT|nc <smtp server> 25
+echo QUIT | nc <smtp server> 25
 ```
