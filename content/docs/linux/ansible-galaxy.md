@@ -1,11 +1,11 @@
 ---
-title: "ansible-galaxy"
+title: "ansible galaxy"
 ---
 
-# ansible-galaxy
+# ansible galaxy
 
 ## Install collections and roles from requirements file
 
 ```bash
-ansible-galaxy install -r requirements.yml
+ansible galaxy install -r requirements.yml
 ```
