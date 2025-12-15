@@ -1,9 +1,9 @@
 ---
-title: "ansible-playbook"
+title: "ansible playbook"
 draft: false
 ---
 
-# ansible-playbook
+# ansible playbook
 
 Set limit for all groups, without a specific host
 
