@@ -7,24 +7,25 @@ draft: false
 
 Some informations round about vim
 
-`:x` Exit: Only write the timestamp of the file if it has actually changed.
+<kbd>:</kbd> <kbd>x</kbd> Exit: Only write the timestamp of the file if it has actually changed.
 
-`<` Use to move line in the respective direction
+<kbd><</kbd> Use to move line in the respective direction
 
-`>` Use to move line in the respective direction
+<kbd>></kbd> Use to move line in the respective direction
 
 ## Visual mode
 
-[v] Visual Mode
+<kbd>v</kbd> Visual Mode
 
 ## Mark text
-d  - delete text
-p - insert text
+<kbd>d</kbd>  - delete text
+
+<kbd>p</kbd> - insert text
 
 ## Line mode
 
-SHIFT + V
+<kbd>SHIFT</kbd> + <kbd>V</kbd>
 
 ## Block mode
 
-CTRL + v
+<kbd>CTRL</kbd> + <kbd>v</kbd>
