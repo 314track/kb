@@ -37,6 +37,19 @@ Configure global default init branch
 git config --global init.defaultBranch main
 ```
 
+Enable for larger projects to achieve better performance
+
+```bash
+git config core.fsmonitor true
+```
+
+Enable for larger projects to achieve better performance
+
+```bash
+git config core.untrackedcache true
+```
+
+
 ## git tag
 
 Create a tag
