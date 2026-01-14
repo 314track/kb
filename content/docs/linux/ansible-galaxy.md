@@ -1,5 +1,6 @@
 ---
 title: "ansible-galaxy"
+draft: false
 ---
 
 # ansible-galaxy

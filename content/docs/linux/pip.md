@@ -1,5 +1,6 @@
 ---
 title: "pip"
+draft: false
 ---
 
 # pip
