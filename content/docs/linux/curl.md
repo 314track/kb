@@ -15,6 +15,12 @@ Example: Resolve the domain example.com on port 80 to 127.0.0.1
 curl --resolve example.com:80:127.0.0.1 http://example.com/
 ```
 
+## Download file
+
+```bash
+curl -fsSLo setup.sh https://example.com/install.sh
+```
+
 ## View the latest version for specific software on GitHub
 
 ### URL to API
